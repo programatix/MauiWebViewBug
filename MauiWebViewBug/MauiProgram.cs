@@ -21,6 +21,9 @@ public static class MauiProgram
 #if ANDROID
                 handlers.AddHandler(typeof(MyWebView), typeof(Platforms.Android.Handlers.MyWebViewHandler));
 #endif
+#if IOS
+                handlers.AddHandler(typeof(MyWebView), typeof(Platforms.iOS.Handlers.MyWebViewHandler));
+#endif
             });
 
 #if DEBUG

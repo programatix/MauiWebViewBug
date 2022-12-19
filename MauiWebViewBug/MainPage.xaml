@@ -5,12 +5,8 @@
              x:Class="MauiWebViewBug.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <ctrl:MyWebView AuthToken="bearer hello" AcceptLanguage="US" Source="https://manytools.org/http-html-text/http-request-headers"></ctrl:MyWebView>
-        </VerticalStackLayout>
+        <Grid>
+            <ctrl:MyWebView Grid.Row="0" AuthToken="bearer hello" AcceptLanguage="US" Source="https://manytools.org/http-html-text/http-request-headers"></ctrl:MyWebView>
+        </Grid>
     </ScrollView>
 </ContentPage>
